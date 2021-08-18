@@ -1,10 +1,21 @@
-import React from 'react';
+/* eslint-disable @typescript-eslint/no-unused-vars */
+import * as React from 'react';
+import { useState } from 'react';
+import SearchForm from './SearchForm';
 
-const NavBar = () => {
+const NavBar = (): JSX.Element => {
+  const [searchText, setSearchText] = useState('');
+  const handleClick = () => {
+    console.log('click 2');
+    setSearchText(_prev => '');
+  };
   return (
-    <div style={{ height: '8vh' }} className='w-screen bg-red-300'>
-      hello
-    </div>
+    <nav className='navbar navbar-light bg-dark'>
+      <div className='container-fluid'>
+        <a className='navbar-brand text-white'>U-TUBE</a>
+        <SearchForm searchText={searchText} setSearchText={setSearchText} handleClick={handleClick} />
+      </div>
+    </nav>
   );
 };
 

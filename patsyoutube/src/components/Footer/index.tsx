@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Footer = () => {
+const Footer = (): JSX.Element => {
   return (
     <div style={{ height: '4vh' }} className='bg-black'>
       hello

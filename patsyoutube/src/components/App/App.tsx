@@ -1,11 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 import Footer from '../Footer';
 import NavBar from '../NavBar';
 import SideBar from '../SideBar';
 import VideoList from '../VideoList';
 import VideoPlayer from '../VideoPlayer';
 
-const App = () => {
+const App = (): JSX.Element => {
   return (
     <div className='w-screen h-screen'>
       <NavBar />

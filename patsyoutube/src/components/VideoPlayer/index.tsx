@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VideoPlayer = () => {
+const VideoPlayer = (): JSX.Element => {
   return <div>hello</div>;
 };
 
